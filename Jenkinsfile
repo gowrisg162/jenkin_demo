@@ -4,20 +4,19 @@ pipeline{
 
   stages{
     stage('Checkout'){
-    steps{
-      got branch:'main', url:'https://github://github.com/gowrisg162/jenkin_demo'
+      steps{
+        got branch:'main', url:'https://github://github.com/gowrisg162/jenkin_demo'
+      }     
     }
-}
-stage('Build'){
-  steps{
-    echo "Building..."
+    stage('Build'){
+      steps{
+        echo "Building..."
+      }  
     }
-}
-stage('Test'){
-  steps{
-    echo "Testing..."
+    stage('Test'){
+      steps{
+        echo "Testing..."
+      }
     }
-}
-}
-}
+  }
 }
