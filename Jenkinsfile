@@ -5,7 +5,7 @@ pipeline{
   stages{
     stage('Checkout'){
       steps{
-        got branch:'main', url:'https://github://github.com/gowrisg162/jenkin_demo'
+        git branch:'main', url:'https://github://github.com/gowrisg162/jenkin_demo'
       }     
     }
     stage('Build'){
